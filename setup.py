@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="multi_python_logger",
-    version="1.2",
+    version="2.0.0",
     packages=find_packages(),
     # Metadata
     author="Mohamed Naji Aboo",
