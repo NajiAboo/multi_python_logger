@@ -25,3 +25,11 @@ pip install multi_python_logger --upgrade
 from multi_python_logger import logger
 logger.log("info", msg="This is the sample message", module_name="app",error_code="1001" )
 ```
+
+## Logger Options
+
+### Local File Logging
+  Automatically logs messages to a local file for easy access and review.
+
+### AWS CloudWatch Logging
+  Send your logs directly to AWS CloudWatch, enabling centralized log management and monitoring.
