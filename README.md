@@ -9,3 +9,12 @@
 <a href="https://github.com/NajiAboo/multi_python_logger/blob/master/LICENSE"><img src="https://img.shields.io/github/license/NajiAboo/multi_python_logger?color=2b9348" alt="License Badge"/></a>
 </div>
 
+## Installation
+
+### Install with pip
+
+Install `multi_python_logger`:
+
+```
+pip install multi_python_logger --upgrade
+```
