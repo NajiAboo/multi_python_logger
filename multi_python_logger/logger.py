@@ -1,6 +1,6 @@
 import logging
 
-from multi_python_logger import logger
+from multi_python_logger import logger as logger
 
 def log_with_context(level, msg, module_name='', error_code='', *args, **kwargs):
     extra = {'module_name': module_name, 'error_code': error_code}
