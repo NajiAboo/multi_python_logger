@@ -34,4 +34,4 @@ def get_logger():
 
 
 # Singleton pattern to ensure one logger instance
-logger = get_logger()
+logger_instance = get_logger()
