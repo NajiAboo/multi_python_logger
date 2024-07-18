@@ -10,7 +10,7 @@ class BaseLogger:
         # formatter = logging.Formatter(
         #     "%(asctime)s - %(name)s - %(levelname)s - %(message)s - [%(filename)s:%(lineno)d]"
         # )
-         formatter = logging.Formatter(
+        formatter = logging.Formatter(
             '%(asctime)s - %(name)s - %(filename)s:%(lineno)d - %(levelname)s - %(message)s'
         )
         self.handler.setFormatter(formatter)
