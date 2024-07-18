@@ -1,7 +1,7 @@
 import boto3
 import watchtower
 
-from multi_python_logger.base_logger import BaseLogger
+from src.base_logger import BaseLogger
 
 
 class CloudWatchLogger(BaseLogger):

@@ -10,8 +10,8 @@ class BaseLogger:
         # formatter = logging.Formatter(
         #     "%(asctime)s - %(name)s - %(levelname)s - %(message)s - [%(filename)s:%(lineno)d]"
         # )
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(filename)s:%(lineno)d - %(module_name)s - %(error_code)s - %(levelname)s - %(message)s'
+         formatter = logging.Formatter(
+            '%(asctime)s - %(name)s - %(filename)s:%(lineno)d - %(levelname)s - %(message)s'
         )
         self.handler.setFormatter(formatter)
         self.logger.addHandler(self.handler)
@@ -21,6 +21,16 @@ class BaseLogger:
 
     def get_logger(self):
         return self.logger
+
+    def log(self, log_type, msg, module_name='', error_code=''):
+        formatted_msg = f"error_code={error_code}, module_name={module_name}, message={msg}"
+        
+        if log_type.lower() == 'info':
+            self.logger.info(formatted_msg)
+        elif log_type.lower() == 'error':
+            self.logger.error(formatted_msg)
+        else:
+            self.logger.debug(formatted_msg)
 
 
 
