@@ -18,3 +18,10 @@ Install `multi_python_logger`:
 ```
 pip install multi_python_logger --upgrade
 ```
+
+### Sample code
+
+```
+from multi_python_logger import logger
+logger.log("info", msg="This is the sample message", module_name="app",error_code="1001" )
+```
