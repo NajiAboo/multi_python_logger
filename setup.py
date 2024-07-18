@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Multi Python Logger",
+    name="multi_python_logger",
     version="1.0",
     packages=find_packages(),
     # Metadata
