@@ -10,5 +10,5 @@ setup(
     description="Application to provide different logging mechanisms",
     keywords="python logger cloud_logger, aws_cloudwatch_logger",
     url="",
-    install_requires=["watchtower==3.2.0", "boto3==1.34.144", "python-dotenv"],
+    install_requires=["watchtower", "boto3", "python-dotenv"],
 )
