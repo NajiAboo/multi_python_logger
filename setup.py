@@ -9,6 +9,5 @@ setup(
     author_email="aboonaji@gmail.com",
     description="Application to provide different logging mechanisms",
     keywords="python logger cloud_logger, aws_cloudwatch_logger",
-    url="",
-    install_requires=["watchtower", "boto3", "python-dotenv"],
+    url=""    
 )
