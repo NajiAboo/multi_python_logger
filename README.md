@@ -1,7 +1,7 @@
 <h1 align="center">Multi Python Logger</h1>
-<p align="center"><i>A collection of awesome readme templates to display on your github profile.</i></p>
+<p align="center"><i>The Multi Python Logger is a versatile logging utility designed to simplify and enhance the logging process in Python applications. It supports logging to local files and integrates seamlessly with AWS CloudWatch, providing a unified interface for all your logging needs. Whether you're developing a small script or a large-scale application, this logger ensures your logs are easily accessible and well-organized..</i></p>
 <div align="center">
-  <a href="https://github.com/elangosundar/awesome-README-templates/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
+  <a href="https://github.com/NajiAboo/multi_python_logger/stargazers"><img src="https://github.com/NajiAboo/multi_python_logger" alt="Stars Badge"/></a>
 <a href="https://github.com/elangosundar/awesome-README-templates/network/members"><img src="https://img.shields.io/github/forks/elangosundar/awesome-README-templates" alt="Forks Badge"/></a>
 <a href="https://github.com/elangosundar/awesome-README-templates/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/elangosundar/awesome-README-templates/issues"><img src="https://img.shields.io/github/issues/elangosundar/awesome-README-templates" alt="Issues Badge"/></a>
