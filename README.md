@@ -30,6 +30,17 @@ logger.log("info", msg="This is the sample message", module_name="app",error_cod
 
 ### Local File Logging
   Automatically logs messages to a local file for easy access and review.
+  To set the file logger set the environment variable 
+  LOGGING_TYPE = "file"
 
 ### AWS CloudWatch Logging
   Send your logs directly to AWS CloudWatch, enabling centralized log management and monitoring.
+
+  To set the Cloudwatch logging set the following environement variables
+
+  LOGGING_TYPE = "cloudwatch"
+  CLOUDWATCH_LOG_GROUP = ""
+  CLOUDWATCH_STREAM_NAME = ""
+  AWS_REGION = ""
+  AWS_ACCESS_KEY = ""
+  AWS_SECRET_KEY = ""
