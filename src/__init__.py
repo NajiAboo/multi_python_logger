@@ -15,7 +15,7 @@ def get_logger():
             config = json.load(f)
     else:
         config = {
-            "logging_type": os.getenv("LOGGING_TYPE", "cloudwatch"),
+            "logging_type": os.getenv("LOGGING_TYPE", "file"),
             "log_file": os.getenv("LOG_FILE", "app.log"),
             "cloudwatch_log_group": os.getenv("CLOUDWATCH_LOG_GROUP", "your-log-group"),
             "cloudwatch_stream_name": os.getenv(

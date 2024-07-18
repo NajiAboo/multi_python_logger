@@ -1,7 +1,7 @@
 import os
 import logging
 from datetime import datetime
-from src.loggers.base_logger import BaseLogger
+from src.base_logger import BaseLogger
 
 
 class FileLogger(BaseLogger):
