@@ -16,7 +16,7 @@
 Install `multi_python_logger`:
 
 ```
-pip install multi_python_logger --upgrade
+pip install multi_python_logger
 ```
 
 ### Sample code
