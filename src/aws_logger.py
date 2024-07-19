@@ -1,6 +1,6 @@
 import boto3
 import watchtower
-
+import concurrent.futures
 from src.base_logger import BaseLogger
 
 
@@ -15,12 +15,20 @@ class CloudWatchLogger(BaseLogger):
 
         cloudwatch_client = session.client("logs")
 
-        return watchtower.CloudWatchLogHandler(
+        return AsyncCloudWatchHandler(
             log_group=self.config["cloudwatch_log_group"],
             stream_name=self.config["cloudwatch_stream_name"],
             boto3_client=cloudwatch_client,
             create_log_group=True,
             max_batch_size=1048576,  # Maximum batch size in bytes
             max_batch_count=10000,  # Maximum number of log events per batch
-            send_interval=30,  # Interval in seconds to send logs
+            send_interval=60,  # Interval in seconds to send logs
         )
+
+class AsyncCloudWatchHandler(watchtower.CloudWatchLogHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=5)
+
+    def emit(self, record):
+        self.executor.submit(super().emit, record)
