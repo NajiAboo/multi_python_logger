@@ -9,7 +9,7 @@ cwd = os.getcwd()
 
 setup(
     name="multi_python_logger",
-    version="2.1.5",
+    version="2.1.6",
     packages=find_packages(),
     # Metadata
     author="Mohamed Naji Aboo",
