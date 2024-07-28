@@ -1,4 +1,4 @@
-from src import logger_instance
+from mp_logger_src import logger_instance
 
 def log(log_type, msg, module_name='', error_code='', *args, **kwargs):
     formatted_msg = f"error_code={error_code}, module_name={module_name}, message={msg}"

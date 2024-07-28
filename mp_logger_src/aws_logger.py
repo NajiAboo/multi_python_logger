@@ -3,7 +3,7 @@ import watchtower
 import concurrent.futures
 from threading import Thread
 import queue
-from src.base_logger import BaseLogger
+from mp_logger_src.base_logger import BaseLogger
 
 
 class CloudWatchLogger(BaseLogger):
