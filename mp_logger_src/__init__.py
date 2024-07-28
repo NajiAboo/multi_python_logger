@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 from .file_logger import FileLogger
 from .aws_logger import CloudWatchLogger
+from .mongodb_logger import MongoDBLogger
 
 load_dotenv()
 
