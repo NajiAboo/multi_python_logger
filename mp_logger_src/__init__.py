@@ -25,7 +25,7 @@ def get_logger():
             "aws_region": os.getenv("AWS_REGION", "us-east-1"),
             "aws_access_key": os.getenv("AWS_ACCESS_KEY", ""),
             "aws_secret_key": os.getenv("AWS_SECRET_KEY", ""),
-            "mongodb_uri": os.getenv("MONGODB_URI", "mongodb://localhost:27017"),
+            "mongodb_uri": os.getenv("MONGODB_URI", "mongodb://localhost:27018"),
             "mongodb_db": os.getenv("MONGODB_DB", "logs"),
             "mongodb_collection": os.getenv("MONGODB_COLLECTION", "log_entries")
         }

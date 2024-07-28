@@ -1,5 +1,5 @@
 import logging
-
+import re
 
 class BaseLogger:
     def __init__(self, config):
@@ -36,8 +36,14 @@ class BaseLogger:
 
 class CustomLogRecord(logging.LogRecord):
     def __init__(self, *args, **kwargs):
+        match = re.search(r'error_code=(\w+), module_name=([\w\s]+),', str(args))
+        if match:
+            self.error_code = match.group(1)
+            self.module_name = match.group(2)
+        else:
+            self.error_code = ''
+            self.module_name = ''
+
         super().__init__(*args, **kwargs)
-        self.module_name = kwargs.get('module_name', '')
-        self.error_code = kwargs.get('error_code', '')
 
 logging.setLogRecordFactory(CustomLogRecord)
