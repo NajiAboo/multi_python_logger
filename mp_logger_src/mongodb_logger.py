@@ -4,7 +4,7 @@ from mp_logger_src.base_logger import BaseLogger
 
 class MongoDBLogger(BaseLogger):
     def __init__(self,config):
-        super().__init__(config=config)
+        super().__init__(config)
         self.client = motor.motor_asyncio.AsyncIOMotorClient(config['mongodb_uri'])
         self.db = self.client[config['mongodb_db']]
         self.collection = self.db[config['mongodb_collection']]
