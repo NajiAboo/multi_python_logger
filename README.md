@@ -53,3 +53,21 @@ logger.log("info", msg="This is the sample message", module_name="app",error_cod
 
   AWS_SECRET_KEY = ""
   ```
+
+
+### MongoDb Logging
+  Send your logs directly to MongoDB, enabling centralized log management and monitoring.
+
+  To set the MongoDB logging set the following environement variables
+
+  ```
+  LOGGING_TYPE = "mongodb"
+
+  MONGODB_URI = "" #default set as "mongodb://localhost:27018"
+
+  MONGODB_DB = "" #default set as logs
+
+  MONGODB_COLLECTION = "" #log_entries
+
+  
+  ```
